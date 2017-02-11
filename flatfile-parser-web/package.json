@@ -1,0 +1,26 @@
+{
+  "name": "flatfile-parser-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hotp/flatfile-parser-web.git"
+  },
+  "author": "Pedro Dutra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hotp/flatfile-parser-web/issues"
+  },
+  "homepage": "https://github.com/hotp/flatfile-parser-web#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consign": "^0.1.2",
+    "express": "^4.14.0",
+    "flatfile-parser": "git+https://github.com/hotp/flatfile-parser.git",
+    "ng-file-upload": "^12.2.11"
+  }
+}

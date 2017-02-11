@@ -1,0 +1,25 @@
+{
+  "name": "flatfile-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha tests/**/*-test.js"
+  },
+  "author": "Pedro Dutra",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "consign": "^0.1.2",
+    "express": "^4.14.0",
+    "log4js": "^0.6.38",
+    "mkdirp": "^0.5.1",
+    "multer": "^1.2.0",
+    "multiparty": "^4.1.2",
+    "validator": "^5.7.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2"
+  }
+}

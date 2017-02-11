@@ -1,0 +1,147 @@
+{
+    "line-invalid-empty": "",
+    "line-invalid-null": null,
+    "line-invalid-random1": "332-5fjaslfah906y2345",
+    "line-valid-seller": "001ç1234567891234çDiego da silvaç50000",
+    "line-invalid-seller-invalid": "001ç1234567891234çDiegoç5fasafsd",
+    "line-invalid-sale": "003ç08ç[1-34-10,2-33-1.5fçRenat",
+    "line-invalid-random3": "003ç08ç[1-34-10,2-33-1.5f0,3-40-0.10]ç",
+    "line-valid-customer": "002ç2345675434544345çJose da SilvaçRural",
+    "line-invalid-random4": "003çç[,2-33-1.5f0,3-40-0.10]çRenat",
+    "line-invalid-random5": "002ç08ç[1-34-10,2-33-1.5f0,3-40-0.10]çRenat",
+    "line-valid-sale": "003ç08ç[1-34-10,2-33-1.5,3-40-0.10]çRenat",
+
+    "item-invalid-empty": "",
+    "item-invalid-null": null,
+    "item-invalid-random1": "1-fsaf5423-7.7e",
+    "item-invalid-random2": "2-50.90-,.",
+    "item-invalid-random3": "3-6-5,20",
+    "item-invalid-random4": "4-4-.20",
+    "item-invalid-random5": "5-03-20.",
+    "item-valid-approach1": "1-320-0.20",
+    "item-valid-approach2": "1-3.20-20",
+    "item-valid-approach3": "jlça1234%-3-3.20",
+    "item-valid-approach4": "ffff-3-320",
+
+
+
+    "item-invalid-empty-split": [],
+    "item-invalid-null-split": null,
+    "item-invalid-random1-split": ["1", "fsaf5423", "7.7e"],
+    "item-invalid-random2-split": ["2","50.90",",."],
+    "item-invalid-random3-split": ["3","6", "5,20"],
+    "item-invalid-random4-split": ["4", "4",".20"],
+    "item-invalid-random5-split": ["5", "03", "20."],
+    "item-valid-approach1-split": ["1", "320", "0.20"],
+    "item-valid-approach2-split": ["1", "3.20", "20"],
+    "item-valid-approach3-split": ["jlça1234%", "3", "3.20"],
+    "item-valid-approach4-split": ["ffff", "3","320"],
+
+    "valid-seller-row": "001ç79999602762çRicardo Nathanç2050",
+    "valid-customer-row": "002ç71511376000109çEmpresa FakeçEducacao",
+    "valid-sale-row": "003ç10ç[1-50-2.20, 2-100-0.80, 3-5-30, 4-600-0.95]çRicardo Nathan",
+    "seller-mock": {
+        "cpf": "12345678",
+        "name": "Juliano Mesquita",
+        "salary": "5000",
+        "type": "seller"
+    },
+    "customer-mock": {
+        "cnpj": "87654321",
+        "businessName": "Business Test",
+        "businessArea": "Tech",
+        "type": "customer"
+    },
+    "sale-mock": {
+        "id": "10",
+        "items": [
+            {
+                "id": "1",
+                "quantity": "20",
+                "price": 1.99
+            },
+
+            {
+                "id": "2",
+                "quantity": 215,
+                "price": 6.29
+            },
+
+            {
+                "id": 3,
+                "quantity": 1200,
+                "price": 0.59
+            },
+
+            {
+                "id": "4",
+                "quantity": 10,
+                "price": 6.39
+            }
+        ],
+        "salesman": "Fabricio",
+        "type": "sale"
+    },
+
+    "final-report": {
+        "worstSeller": null,
+        "sellers": [
+            {
+                "name": "Carlos",
+                "profit": 300
+            },
+
+            {
+                "name": "Junior",
+                "profit": 1300
+            },
+
+            {
+                "name": "Pedro",
+                "profit": 800
+            },
+
+            {
+                "name": "Felipe",
+                "profit": 100.67
+            }
+        ],
+        "totalOfCustomers": 12,
+        "totalOfSellers": 5,
+        "highProfitSale": {
+            "id": "5",
+            "items": [
+                {
+                    "id": "1",
+                    "quantity": 20,
+                    "price": 5.40
+                }
+            ],
+            "salesman": "Joaquim"
+        }
+    },
+
+    "null-report-mock": {
+        "sellers": [],
+        "totalOfCustomers": 0,
+        "totalOfSellers": 0,
+        "highProfitSale": null
+    },
+
+    "report-mock": {
+        "sellers": [],
+        "totalOfCustomers": 12,
+        "totalOfSellers": 5,
+        "highProfitSale": {
+            "id": "5",
+            "items": [
+                {
+                    "id": "1",
+                    "quantity": 20,
+                    "price": 5.40
+                }
+            ],
+            "salesman": "Joaquim"
+        }
+    }
+}
