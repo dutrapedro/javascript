@@ -1,0 +1,32 @@
+html, body, #main, .container {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.result-displayer {
+    position: relative;
+    margin-top: 5%;
+    display: inline-block;
+}
+
+.video-detail-container {
+    color: #000;
+
+    .video-detail-displayer {
+        display: block;
+        width: 320px;
+        float: left;
+        padding: 20px;
+        margin-right: 3%;
+    }
+
+    h3 {
+        font-size: medium;
+        word-wrap: break-word;
+        color: #22313F;
+    }
+}
