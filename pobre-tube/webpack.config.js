@@ -3,7 +3,7 @@ const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
-const VENDORS_LIBS = ['react', 'react-dom', 'izap-youtube-search'];
+const VENDORS_LIBS = ['react', 'react-dom'];
 
 const config = {
     entry: {

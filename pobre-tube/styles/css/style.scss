@@ -13,6 +13,27 @@ html, body, #main, .container {
     display: inline-block;
 }
 
+.video-detail-container:hover {
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.video-player {
+    width: 60%;
+    height: 50%;
+    position: relative;
+    margin: 0 auto;
+    top: 10%;
+}
+
+.navbar-brand:hover {
+    cursor: pointer;
+}
+
 .video-detail-container {
     color: #000;
 

@@ -11,7 +11,7 @@ class ResultDisplayer extends Component {
     render() {
         return (
             <div className="result-displayer">
-                <VideoDetailDisplayer resultsProps={ this.props.resultsProps } />
+                <VideoDetailDisplayer resultsProps={ this.props.resultsProps } onVideoSelected={ this.props.onVideoSelected }/>
             </div>
         );
     }

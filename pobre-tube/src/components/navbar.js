@@ -11,7 +11,7 @@ class Navbar extends Component {
         return (
             <nav className="navbar navbar-inverse navbar-fixed-top">
                 <div className="container">
-                    <a className="navbar-brand" href="#">PobreTube</a>
+                    <a className="navbar-brand" onClick={ this.props.onBrandClick }>PobreTube</a>
                     <SearchBar 
                             classNameName='input-field inline' 
                             onSearchChange={ this.props.onSearchChange }
