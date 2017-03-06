@@ -14,20 +14,23 @@ const todo = (state, action) => {
       return Object.assign({}, state, {
         completed: !state.completed
       });
-    default:
-      return state;
+      case 'DELETE_TODO':
+        return state.filter( td => td.id != action.id);
+      default:
+        return state;
   };
 };
 
 
 const todos = (state = [], action) => {
     switch(action.type) {
-        case 'ADD_TODO': return [...state, todo(undefined, action)]
+        case 'ADD_TODO': return [...state, todo(undefined, action)];
         case 'TOGGLE_TODO': {
             return state.map( td => todo(td, action));
         }
+        case 'DELETE_TODO': return todo(state, action);
 
-        default: return state
+        default: return state;
     }
 }
 

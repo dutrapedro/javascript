@@ -5,12 +5,6 @@ const Navbar = ( { active, children, onClick } ) => (
     <nav className="navbar navbar-fixed-top">
         <div className="container">
             <div className="navbar-header page-scroll">
-                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                    <span className="icon-bar"></span>
-                </button>
                 <a className="navbar-brand" href="#home">To Do App</a>
             </div>
 

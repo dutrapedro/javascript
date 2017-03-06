@@ -1,6 +1,6 @@
 let nextTodoId = 0;
 
-export const ACAddTodo = (text) => {
+export const ACAddTodo = ( text ) => {
     return {
         type: 'ADD_TODO',
         id: nextTodoId++,
@@ -9,17 +9,24 @@ export const ACAddTodo = (text) => {
     }
 };
 
-export const ACToggleTodo = (id) => {
+export const ACToggleTodo = ( id ) => {
     return {
         type: 'TOGGLE_TODO',
         id
     }
 };
 
-export const ACSetVisibilityFilter = (filter) => {
+export const ACSetVisibilityFilter = ( filter ) => {
   return {
     type: 'SET_VISIBILITY_FILTER',
     filter
   }
+};
+
+export const ACDeleteTodo = ( id ) => {
+    return {
+        type: 'DELETE_TODO',
+        id
+    }
 };
 

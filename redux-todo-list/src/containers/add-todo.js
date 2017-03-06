@@ -6,7 +6,7 @@ import { ACAddTodo } from '../actions';
 
 const mapDispatchToProps = ( dispatch ) => {
   return {
-    onSubmit: ( text ) => {
+    onAddClick: ( text ) => {
       dispatch( ACAddTodo( text ) );
     }
   };

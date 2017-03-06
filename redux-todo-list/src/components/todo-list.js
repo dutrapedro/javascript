@@ -9,15 +9,26 @@ class TodoList extends Component {
   render() {
     return (
       <div className='todo-list'>
-        <ul>
-          {this.props.todos.map(todo =>
+        <table className='table table-bordered table-hover'>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Descrição</th>
+              <th className='col-md-4'>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {this.props.todos.map(todo =>
             <Todo
               key={todo.id}
               {...todo}
-              onClick={ () => this.props.onTodoClick(todo.id) }
+              onClick={ () => this.props.onTodoClick( todo.id ) }
+              onDeleteTodo={ () => this.props.onDeleteTodo( todo.id ) }
             />
           )}
-        </ul>
+          </tbody>
+        </table>
       </div>
     );
   }
