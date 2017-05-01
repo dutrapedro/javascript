@@ -1,0 +1,21 @@
+
+<div>
+  <div class="game-control">
+    <button 
+      type="button" 
+      class="btn btn-default btn-lg"
+      (click)="startGame()"
+      [disabled]="startBlocked">Start</button>
+    <button 
+      type="button" 
+      class="btn btn-danger btn-lg"
+      (click)="stopGame()">Stop</button>
+  </div>
+
+  <div class="cards-container container">
+        <div *ngFor="let randomNumber of generatedNumbers">
+            <app-even-number *ngIf="randomNumber.isEven === true" [number]="randomNumber.random"></app-even-number>
+            <app-odd-number *ngIf="randomNumber.isEven === false" [number]="randomNumber.random"></app-odd-number>
+        </div>
+  </div>
+</div>

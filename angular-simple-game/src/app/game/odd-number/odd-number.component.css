@@ -1,0 +1,15 @@
+.odd-number {
+    width: 120px; 
+    height: 120px; 
+    background-color: #16a085;
+    color: #000;
+    float: left; 
+    margin: 5px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.number-type {
+    font-weight: bold;
+}
